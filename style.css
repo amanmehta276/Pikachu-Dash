@@ -10,7 +10,7 @@ body {
     background: #87CEEB; 
     
     /* Ensure the Pika background is set correctly if you use it */
-    background-image: url('assests/ui/pika.jpg');
+    background-image: url('pika.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;  
@@ -184,4 +184,5 @@ button:hover {
         padding: 10px 20px;
     }
 }
+
 
