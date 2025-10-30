@@ -19,32 +19,32 @@ let nextTrunkFrame = 0;
 
 // --- Images ---
 const trunkImage = new Image();
-trunkImage.src = "assests/obstacles/trunk.png";
+trunkImage.src = "trunk.png";
 
 const balloonImg = new Image();
-balloonImg.src = "assests/collectibles/baloon.png";
+balloonImg.src = "baloon.png";
 
 const bg = new Image();
-bg.src = "assests/background/sky.jpg";
+bg.src = "sky.jpg";
 
 const ground = new Image();
-ground.src = "assests/background/ground.png";
+ground.src = "ground.png";
 
 const pikachuIdle = new Image();
-pikachuIdle.src = "assests/pikachu/idle.png";
+pikachuIdle.src = "idle.png";
 
 // const pikachuJump = new Image();
 // pikachuJump.src = "assests/pikachu/jump.png";
 
 const pikachuJump = new Image();
-pikachuJump.src = "assests/pikachu/pikachusky.png";
+pikachuJump.src = "pikachusky.png";
 
 const pikachuRunFrames = [
-  "assests/pikachu/run5.png",
-  "assests/pikachu/run4.png",
-  "assests/pikachu/run1.png",
-  "assests/pikachu/run4.png",
-  "assests/pikachu/idle.png",
+  "run5.png",
+  "run4.png",
+  "run1.png",
+  "run4.png",
+  "idle.png",
 ].map(src => {
   const img = new Image();
   img.src = src;
@@ -352,4 +352,5 @@ canvas.addEventListener("click", function onClick(e) {
     startGame();
   }
 });
+
 
