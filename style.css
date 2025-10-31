@@ -7,7 +7,7 @@
 /* --- Global Background (Clean, Pokémon Colors) --- */
 body {
     background: #87CEEB; /* Sky Blue */
-    background-image: url('assests/ui/pika.jpg'); /* Optional background image */
+    background-image: url('pika.jpg'); /* Optional background image */
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;  
@@ -219,4 +219,5 @@ button:hover {
         font-size: 24px;
         padding: 15px 40px;
     }
+
 }
