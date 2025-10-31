@@ -21,32 +21,32 @@ let nextTrunkFrame = 0;
 // --- Images (Ensure these paths are correct) ---
 // You must have these assets in an 'assests' folder for the game to work.
 const trunkImage = new Image();
-trunkImage.src = "assests/obstacles/trunk.png";
+trunkImage.src = "trunk.png";
 
 const balloonImg = new Image();
-balloonImg.src = "assests/collectibles/baloon.png";
+balloonImg.src = "baloon.png";
 
 const bg = new Image();
-bg.src = "assests/background/sky.jpg";
+bg.src = "sky.jpg";
 
 const ground = new Image();
-ground.src = "assests/background/ground.png";
+ground.src = "ground.png";
 
 const pikachuIdle = new Image();
-pikachuIdle.src = "assests/pikachu/idle.png";
+pikachuIdle.src = "idle.png";
 
 const pikachuJump = new Image();
-pikachuJump.src = "assests/pikachu/pikachusky.png";
+pikachuJump.src = "pikachusky.png";
 
 const pikachuCollision = new Image();
-pikachuCollision.src = "assests/pikachu/obstacle.png";
+pikachuCollision.src = "/obstacle.png";
 
 const pikachuRunFrames = [
-  "assests/pikachu/run5.png",
-  "assests/pikachu/run4.png",
-  "assests/pikachu/run1.png",
-  "assests/pikachu/run4.png",
-  "assests/pikachu/idle.png",
+  "run5.png",
+  "run4.png",
+  "run1.png",
+  "run4.png",
+  "idle.png",
 ].map(src => {
   const img = new Image();
   img.src = src;
@@ -84,17 +84,17 @@ const mobileJumpBtn = document.getElementById("mobileJumpBtn");
 
 
 // --- Game audio ---
-const backgroundMusic = new Audio('assests/sound/baase.mp3');
+const backgroundMusic = new Audio('baase.mp3');
 backgroundMusic.loop = true;
 backgroundMusic.volume = 0.5;
 
-const crashSound = new Audio('assests/sound/crash.mp3');
+const crashSound = new Audio('crash.mp3');
 crashSound.volume = 0.8;
 
-const collectSound = new Audio('assests/sound/collect.mp3');
+const collectSound = new Audio('collect.mp3');
 collectSound.volume = 0.7;
 
-const jumpSound = new Audio('assests/sound/jump.mp3');
+const jumpSound = new Audio('jump.mp3');
 jumpSound.volume = 0.5;
 
 // Separate mute states
@@ -462,4 +462,5 @@ document.addEventListener("keydown", (e) => {
             handleJump(false); // Double Jump
         }
     }
+
 });
