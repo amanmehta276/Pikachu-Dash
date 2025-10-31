@@ -39,7 +39,7 @@ const pikachuJump = new Image();
 pikachuJump.src = "pikachusky.png";
 
 const pikachuCollision = new Image();
-pikachuCollision.src = "/obstacle.png";
+pikachuCollision.src = "obstacle.png";
 
 const pikachuRunFrames = [
   "run5.png",
@@ -464,3 +464,4 @@ document.addEventListener("keydown", (e) => {
     }
 
 });
+
